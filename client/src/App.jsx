@@ -7,7 +7,7 @@ export default function App() {
 
   // Fetch bets from the backend
   useEffect(() => {
-    fetch('https://bet-against-me-api.onrender.com/')
+    fetch('https://bet-against-me-api.onrender.com/api/bets')
       .then(res => res.json())
       .then(data => setBets(data));
   }, []);
