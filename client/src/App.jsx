@@ -9,7 +9,7 @@ export default function App() {
 
   // Fetch from your live Render URL
   useEffect(() => {
-    fetch('https://your-render-name.onrender.com/api/bets')
+    fetch('https://bet-against-me.onrender.com/api/bets')
       .then(res => res.json())
       .then(data => {
         setBets(data);
